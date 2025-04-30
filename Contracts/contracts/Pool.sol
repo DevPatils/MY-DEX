@@ -33,7 +33,7 @@ contract SimpleLiquidityPool {
     address public tokenX;
     address public tokenY;
     LPToken public lpToken;
-
+    
     uint public reserveX;
     uint public reserveY;
     uint public constant FEE_PERCENT = 3; // 0.3%
@@ -141,4 +141,5 @@ contract SimpleLiquidityPool {
     function min(uint a, uint b) internal pure returns (uint) {
         return a < b ? a : b;
     }
+    
 }
